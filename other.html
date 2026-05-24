@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры работ | Прочее</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #FFF8DC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 40px;
+            background: #DEB887;
+            color: #3E2A1F;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Georgia', 'Times New Roman', cursive;
+            font-style: italic;
+            transition: all 0.2s;
+        }
+
+        .back-button:hover {
+            background: #D2B48C;
+            transform: scale(1.02);
+        }
+
+        .gallery {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← ГЛАВНАЯ</a>
+    <div class="gallery">
+        <!-- ЗДЕСЬ ДОБАВЛЯТЬ РИСУНКИ --> 
+        <img src="1.jpg" alt="Ошибка загрузки!">
+        <img src="2.jpg" alt="Ошибка загрузки!">
+    </div>
+</body>
+</html>

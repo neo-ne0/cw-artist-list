@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры работ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #FFF8DC;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', 'Times New Roman', cursive;
+            font-style: italic;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .block {
+            background: #FFEBCD;
+            border: 3px solid #DEB887;
+            border-radius: 20px;
+            padding: 18px 12px;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Georgia', 'Times New Roman', cursive;
+            font-style: italic;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .static-block {
+            background: #F5DEB3;
+            color: #8B6914;
+            cursor: default;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .row a.block {
+            flex: 1;
+            display: block;
+            text-decoration: none;
+            color: #6B4226;
+            background: #FFDEAD;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #D2B48C;
+        }
+
+        .row a.block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 #D2B48C;
+            background: #FFE4C4;
+        }
+
+        .row a.block:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 #D2B48C;
+        }
+
+        @media (max-width: 550px) {
+            .row {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .block {
+                font-size: 16px;
+                padding: 14px 10px;
+            }
+            .container {
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block static-block">ПОСМОТРЕТЬ ПРИМЕРЫ:</div>
+
+        <div class="row">
+            <a href="items.html" class="block">ПРЕДМЕТЫ</a>
+            <a href="illustrations.html" class="block">ИЛЛЮСТРАЦИИ</a>
+            <a href="designs.html" class="block">ДИЗАЙНЫ</a>
+        </div>
+
+        <div class="row">
+            <a href="big-costumes.html" class="block">КОСТЮМЫ 200Х300</a>
+            <a href="costumes.html" class="block">КОСТЮМЫ 100Х150</a>
+            <a href="other.html" class="block">ПРОЧЕЕ</a>
+        </div>
+    </div>
+</body>
+</html>
